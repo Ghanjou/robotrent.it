@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RobotRent.it | Noleggio Robot Umanoidi in Italia</title>
+    <meta
+      name="description"
+      content="Noleggia robot umanoidi per eventi, retail e hospitality con consegna rapida in tutta Italia."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#">RobotRent<span>.it</span></a>
+        <nav class="top-links">
+          <a href="#fleet">Flotta</a>
+          <a href="#how">Come funziona</a>
+          <a href="#faq">FAQ</a>
+          <button class="btn btn-outline">Area clienti</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Noleggio robot umanoidi premium</p>
+            <h1>Prenota il robot perfetto come noleggeresti un’auto.</h1>
+            <p>
+              Dal retail agli eventi aziendali: scegli modello, durata e citta.
+              Robot pronti all’uso, supporto tecnico incluso.
+            </p>
+            <div class="hero-badges">
+              <span>Consegna in 24/48h</span>
+              <span>Assistenza 7/7</span>
+              <span>Copertura nazionale</span>
+            </div>
+          </div>
+
+          <form class="booking-card" id="bookingForm">
+            <h2>Cerca disponibilita</h2>
+            <div class="form-row">
+              <label for="city">Citta</label>
+              <select id="city" required>
+                <option value="">Seleziona citta</option>
+                <option>Milano</option>
+                <option>Roma</option>
+                <option>Torino</option>
+                <option>Bologna</option>
+                <option>Napoli</option>
+              </select>
+            </div>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="from">Dal</label>
+                <input id="from" type="date" required />
+              </div>
+              <div class="form-row">
+                <label for="to">Al</label>
+                <input id="to" type="date" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="useCase">Utilizzo</label>
+              <select id="useCase" required>
+                <option value="">Seleziona utilizzo</option>
+                <option>Evento / Fiera</option>
+                <option>Store / Retail</option>
+                <option>Reception / Hospitality</option>
+                <option>Educational</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Vedi robot disponibili</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container trust-grid">
+          <article>
+            <strong>120+</strong>
+            <p>noleggi completati nel 2025</p>
+          </article>
+          <article>
+            <strong>4.9/5</strong>
+            <p>valutazione media clienti B2B</p>
+          </article>
+          <article>
+            <strong>&lt; 2 ore</strong>
+            <p>tempo medio risposta preventivi</p>
+          </article>
+          <article>
+            <strong>100%</strong>
+            <p>robot consegnati configurati</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="fleet container" id="fleet">
+        <div class="section-heading">
+          <p class="eyebrow">La nostra flotta</p>
+          <h2>Modelli disponibili subito</h2>
+        </div>
+        <div class="fleet-grid">
+          <article class="robot-card">
+            <div class="robot-cover cover-a"></div>
+            <div class="robot-body">
+              <h3>RR-One Host</h3>
+              <p>Ideale per accoglienza, check-in e customer greeting.</p>
+              <ul>
+                <li>Autonomia: 10 ore</li>
+                <li>Lingue: IT / EN / FR</li>
+                <li>Altezza: 145 cm</li>
+              </ul>
+              <div class="card-footer">
+                <span>da 490 euro / giorno</span>
+                <button class="btn btn-outline">Dettagli</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="robot-card">
+            <div class="robot-cover cover-b"></div>
+            <div class="robot-body">
+              <h3>RR-Sales Pro</h3>
+              <p>Perfetto per retail assistito, demo prodotto e lead capture.</p>
+              <ul>
+                <li>Touchscreen 13"</li>
+                <li>Integrazione CRM</li>
+                <li>Vision AI inclusa</li>
+              </ul>
+              <div class="card-footer">
+                <span>da 690 euro / giorno</span>
+                <button class="btn btn-outline">Dettagli</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="robot-card">
+            <div class="robot-cover cover-c"></div>
+            <div class="robot-body">
+              <h3>RR-Event Max</h3>
+              <p>Per eventi ad alto traffico con performance e show mode.</p>
+              <ul>
+                <li>Audio 360 gradi</li>
+                <li>Coreografie custom</li>
+                <li>Operatore on-site opzionale</li>
+              </ul>
+              <div class="card-footer">
+                <span>da 890 euro / giorno</span>
+                <button class="btn btn-outline">Dettagli</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how" id="how">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Come funziona</p>
+            <h2>3 step, come nel noleggio auto</h2>
+          </div>
+          <div class="steps">
+            <article>
+              <span>1</span>
+              <h3>Seleziona periodo e citta</h3>
+              <p>Inserisci date, location e tipologia d’uso per il tuo evento.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3>Scegli il robot</h3>
+              <p>Confronta modelli, funzioni e prezzi trasparenti in tempo reale.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3>Consegna e attivazione</h3>
+              <p>Spediamo, configuriamo e formiamo il tuo team in poche ore.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq container" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Domande frequenti</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Serve personale tecnico durante il noleggio?</summary>
+            <p>No, per la maggior parte dei casi no. Offriamo setup iniziale e supporto remoto incluso.</p>
+          </details>
+          <details>
+            <summary>Posso personalizzare voce e script del robot?</summary>
+            <p>Si, puoi caricare messaggi, flussi conversazionali e branding prima della consegna.</p>
+          </details>
+          <details>
+            <summary>Qual e la durata minima del noleggio?</summary>
+            <p>La durata minima e di 1 giorno, con sconti progressivi da 3 giorni in su.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-wrap">
+          <h2>Pronto a portare un robot umanoide nel tuo business?</h2>
+          <p>Ricevi un preventivo personalizzato in meno di 2 ore.</p>
+          <a href="#" class="btn btn-primary">Richiedi preventivo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> RobotRent.it - Tutti i diritti riservati</p>
+        <p>P.IVA 00000000000 - support@robotrent.it</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
