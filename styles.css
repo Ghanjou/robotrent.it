@@ -229,6 +229,14 @@ section {
   margin-top: 0.2rem;
 }
 
+.section-lead {
+  max-width: 62ch;
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
 .fleet-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -243,19 +251,43 @@ section {
 }
 
 .robot-cover {
-  height: 160px;
+  height: 220px;
+  background: #0a1223;
+  overflow: hidden;
 }
 
-.cover-a {
-  background: linear-gradient(140deg, #5082ff, #1d2d58);
+.robot-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
-.cover-b {
-  background: linear-gradient(140deg, #8b67ff, #2c2350);
+.robot-market {
+  margin: 0 0 0.2rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #80aaff;
+  font-weight: 600;
 }
 
-.cover-c {
-  background: linear-gradient(140deg, #2ec4b6, #1f3a48);
+.robot-body h3 {
+  margin-top: 0;
+}
+
+.fleet-credits {
+  margin: 1.25rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #7d92bd;
+}
+
+.fleet-credits a {
+  color: #a8c4ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .robot-body {
